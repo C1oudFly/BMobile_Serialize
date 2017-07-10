@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	
+	<property>
+		<name>collector_1</name>
+		<value>com.oarcle.mobile.date.mobile.collector.MobileNetCountCollector</value>
+	</property>
+	
+	<property>
+		<name>collector_2</name>
+		<value>com.oarcle.mobile.date.mobile.collector.MobileFlowCollector</value>
+	</property>
+
+</configuration>

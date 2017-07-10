@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>phone_flow</name>
+		<value>insert into mobile_phone_flow values(?,?,?,?,?) ON DUPLICATE KEY UPDATE phoneupflow = ?,phonedownflow = ?,phonetotalflow = ?</value>
+	</property>
+	
+	<property>
+		<name>site_visit</name>
+		<value>insert into website_phone_count values(?,?,?,?) ON DUPLICATE KEY UPDATE phonecount = ?</value>
+	</property>
+	
+	<property>
+		<name>pv_count</name>
+		<value>insert into website_phone_pv values(?,?,?) ON DUPLICATE KEY UPDATE phonepv = ?</value>
+	</property>
+	
+	<property>
+		<name>mobile_2</name>
+		<value>insert into mobile_phone_flow values(?,?,?,?,?) ON DUPLICATE KEY UPDATE phoneupflow = ?,phonedownflow=?,phonetotalflow=?</value>
+	</property>
+	
+	<property>
+		<name>mobile_1</name>
+		<value>insert into mobile_phone_count values(?,?,?) ON DUPLICATE KEY UPDATE phonecount=?</value>
+	</property>
+
+</configuration>
